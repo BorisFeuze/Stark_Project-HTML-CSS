@@ -8,73 +8,183 @@
   </head>
   <body>
     <div class="left-sidebar-grid">
-      <header class="header">NAVBAR</header>
-      <main class="main-content">
+      <header class="header">
+        <nav class="navigation">
+          <ul class="list">
+            <a class="list__logo" href=""
+              ><img src="../img/Immagine 2025-07-21 133054.png" alt=""
+            /></a>
+            <select class="list__select" name="options" id="option-select">
+              <option value="Product">Product</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+            <li class="list__items">Pricing</li>
+            <li>Blog</li>
+            <li>Library</li>
+            <li>Support</li>
+            <li>Log In</li>
+            <button class="list__button">30-day free team trial</button>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-content">Main content</main>
+      <section class="left-sidebar">
+        <div class="sidebar__container">
+          <label class="label__sidebar" for="site-search"
+            >Search Library:</label
+          >
 
-        <section class="section1"> <!--New in the Library from Hua-->
-          <div class="section-header">
-            <h2>New in the Library</h2>
-            <a href="#">View All</a>
+          <input class="label__input" type="search" id="site-search" name="q" />
+        </div>
+        <div class="sidebar__container--list">
+          <ul class="sidebar__list">
+            <li class="sidebar__items"><a href="">Home </a></li>
+            <li class="sidebar__items"><a href="">Collection </a></li>
+            <li class="sidebar__items">
+              <div class="sidebar__select">
+                <a href="">Categories</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                    fill="#0F0F0F"
+                  />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contribute__container">
+          <h4 class="contribute__headline">Contribute to Stark</h4>
+          <p class="contribute__text">
+            Got any accessibility resources or news?
+          </p>
+          <button class="contribute__button">Submit a Resource</button>
+        </div>
+      </section>
+      <!-- <footer class="footer">
+        <div class="footer__links--box">
+          <div class="footer__links--container">
+            <h4>Use cases</h4>
+            <ul>
+              <li><a href="">For Designers</a></li>
+              <li><a href="">For Developers</a></li>
+              <li><a href="">For Product Managers</a></li>
+              <li><a href="">For Compliance Managers</a></li>
+            </ul>
           </div>
-          <p class="subtitle">Newly added accessibility resources, guides, and more.</p>
-          <br>
-          <div class="grid">
-            <a href="#" class="card">
-              <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="logo1"/>
-                <span class="card-category">Resources</span>
-              </div>
-              <h3 class="card-title">Making Accessible Books</h3>
-            </a>
-  
-            <a href="#" class="card">
-              <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="logo1"/>
-                <span class="card-category">Resources</span>
-              </div>
-              <h3 class="card-title">Inclusive Publishing</h3>
-            </a>
 
-            <a href="#" class="card">
-              <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="logo1"/>
-                <span class="card-category">Resources</span>
-              </div>
-              <h3 class="card-title">The APLN(Accessible Publishing...</h3>
-            </a>
-
-            <a href="#" class="card">
-              <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="logo1"/>
-                <span class="card-category">Resources</span>
-              </div>
-              <h3 class="card-title">The DAISY Consortium's Accessible...</h3>
-            </a>
-
-            <a href="#" class="card">
-              <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="logo1"/>
-                <span class="card-category">Resources</span>
-              </div>
-              <h3 class="card-title">Language,Please: Style Guide&Resources for ...</h3>
-            </a>
-
-            <a href="#" class="card">
-              <div class="card-header">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="logo1"/>
-                <span class="card-category">Resources</span>
-              </div>
-              <h3 class="card-title">4 Steps to more inclusive, precise language</h3>
-            </a>
+          <div class="footer__links--container">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Library</a></li>
+              <li><a href="">For Product Managers</a></li>
+              <li><a href="">Release Notes</a></li>
+              <li><a href="">Slack Community</a></li>
+              <li><a href="">WCGA Compliance</a></li>
+              <li><a href="">Section 508 Compiance</a></li>
+              <li>
+                <a href="">European Accessibility Act (EAA) Compliance</a>
+              </li>
+            </ul>
           </div>
-        </section>
 
-        <!-- <section> 
-          Featured Collections
-        </section> -->
-      </main>
-      <section class="left-sidebar">Searrch Library</section>
-      <footer class="footer">Footer</footer>
+          <div class="footer__links--container">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="">MyAccount</a></li>
+              <li><a href="">Support Docs</a></li>
+              <li><a href="">Contact Uss</a></li>
+              <li><a href="">Feature Requests</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links--container">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="">Stark Framework</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms of Service</a></li>
+              <li><a href="">Code of Conduct</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links--container">
+            <h4>Security</h4>
+            <ul>
+              <li><a href="">Security Overview</a></li>
+              <li><a href="">Cookie Policy</a></li>
+              <li><a href="">AI Overview</a></li>
+              <li><a href="">GDPR</a></li>
+              <li><a href="">Status</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links--container">
+            <h4>Design Integrations</h4>
+            <ul>
+              <li><a href="">Stark for Figma</a></li>
+              <li><a href="">Stark for FigJam</a></li>
+              <li><a href="">Stark for Sketch</a></li>
+              <li><a href="">Stark for Adobe XD</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links--container">
+            <h4>Developer Integrations</h4>
+            <ul>
+              <li><a href="">Stark for Chrome</a></li>
+              <li><a href="">Stark for Firefox</a></li>
+              <li><a href="">Stark for Edge</a></li>
+              <li><a href="">Stark for Safari</a></li>
+              <li><a href="">Star for Arck</a></li>
+              <li><a href="">Stark for Brave</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__end">
+          <div class="footer__end--container">
+            <img
+              class="footer__end--img"
+              src="../img/icons8-twitter-50.png"
+              alt=""
+            />
+            <img
+              class="footer__end--img"
+              src="../img/icons8-instagram-50.png"
+              alt=""
+            />
+            <img
+              class="footer__end--img"
+              src="../img/icons8-slack-50.png"
+              alt=""
+            />
+            <img
+              class="footer__end--img"
+              src="../img/icons8-linkedin-50.png"
+              alt=""
+            />
+            <img
+              class="footer__end--img"
+              src="../img/icons8-youtube-50.png"
+              alt=""
+            />
+          </div>
+
+          <div class="footer__end--copy">
+            <h5>Made remotely with love by Stark Lab, Inc. Copyright 2025</h5>
+          </div>
+        </div>
+      </footer> -->
     </div>
   </body>
 </html>
