@@ -12,7 +12,8 @@ html {
 body {
   width: 100%;
 }
-/* grid container */
+/* grid container  */
+
 .left-sidebar-grid {
   display: grid;
   grid-template-areas:
@@ -92,7 +93,6 @@ img {
 .subtitle {
   color: grey;
   margin-bottom: 2rem;
-  
 }
 
 .grid {
@@ -101,7 +101,7 @@ img {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  gap:30px;
+  gap: 30px;
 }
 
 .card {
@@ -119,13 +119,85 @@ img {
 .card-title {
   font-size: 1.35rem;
   color: rgb(33, 33, 33);
-  font-weight:300;
+  font-weight: 300;
   line-height: 1.2;
 }
 .card-category {
   font-size: 0.75rem;
   color: rgb(146, 79, 222);
   font-weight: 600;
-  text-transform:capitalize;
+  text-transform: capitalize;
+}
+.section-2 {
+  display: flex;
+  height: 100%;
+  border: 2px solid;
+}
 
+.container-featured-collections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.head-featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-inline: 2rem;
+}
+
+.head-featured h2 {
+  font-size: 3.5rem;
+}
+
+.head-featured p {
+  font-size: 1.75rem;
+  margin-top: 0.25rem;
+}
+
+.head-featured a {
+  font-size: 1.25rem;
+}
+
+.collections {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-top: 3rem;
+  gap: 1.25rem;
+  padding-inline: 2rem;
+}
+
+.collection-item {
+  width: 100%;
+  padding-top: 55px;
+  position: relative;
+}
+
+.collection-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.collection-item div {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.text-1 {
+  padding-inline: 5rem;
+}
+
+.text-2 {
+  margin-left: 50px;
+}
+.text-3 {
+  padding-inline: 50px;
 }
